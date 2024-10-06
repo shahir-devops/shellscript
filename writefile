@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "enter a file name to check it has write permissions are not:" writefile
+
+if [ -w $filename ]
+then 
+echo "file has write permissions"
+else
+echo "file doesnt have write permissions"
+chmod uog+w $writefile
+echo "file has write permissions now"
+fi
+
