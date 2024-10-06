@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "enter a file to check read permissions:" readfile
+
+if [ -r $readfile ]
+then 
+echo "file has read permissions"
+else
+echo "file dont have read permissions"
+echo "now changed to read permisions"
+chmod uog+x $readfile
+
+fi
+
