@@ -1,0 +1,7 @@
+sudo yum install java-11-amazon-corretto-devel -y
+cd /opt/
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz 
+sudo tar -xvf apache-tomcat-9.0.97.tar.gz
+sudo chmod 777 -R apache-tomcat-9.0.97
+cd /opt/apache-tomcat-9.0.97
+./bin/startup.sh
